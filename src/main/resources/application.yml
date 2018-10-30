@@ -1,0 +1,9 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://${MYSQL_PORT_3306_TCP_ADDR:localhost}:${MYSQL_PORT_3306_TCP_PORT:3306}/${MYSQL_ENV_MYSQL_DATABASE:test_ssd}?autoReconnect=TRUE&useUnicode=TRUE&characterEncoding=utf8
+      username: root
+      password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
